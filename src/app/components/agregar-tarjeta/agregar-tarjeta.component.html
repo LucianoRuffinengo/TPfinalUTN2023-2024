@@ -1,0 +1,58 @@
+<section class="seccion">
+        <fieldset class="form">
+            <legend>Carga los datos de tu Tarjeta</legend>
+            <form [formGroup]="formulario" id="formulario" (ngSubmit)="guardarTarjeta()">
+    
+                <div class="campo" id="campo-numT">
+                    <label for="numero-tarjeta">Numero de tarjeta: </label>
+                    <input type="text" id="numero-tarjeta" formControlName="numeroTarjeta" maxlength="16" (input)="soloNumeros($event)">
+                </div>
+                <div class="error" *ngIf="formulario.controls['numeroTarjeta'].hasError('required') && formulario.touched">
+                    <span>*El campo es requerido</span>
+                </div>
+                <div class="error" *ngIf="formulario.controls['numeroTarjeta'].hasError('minlength') && formulario.touched">
+                    <span>*Deben ser 16 caracteres</span>
+                </div>
+    
+                <div class="campo" id="campo-codS">
+                    <label for="codigo-seguridad">Codigo de seguridad: </label>
+                    <input type="text" id="codigo-seguridad" formControlName="codigoSeguridad" maxlength="3" (input)="soloNumeros($event)">
+                </div>
+                <div class="error" *ngIf="validar('codigoSeguridad', 'required')">
+                    <span>*El campo es requerido</span>
+                </div>
+                <div class="error" *ngIf="validar('codigoSeguridad', 'minlength')">
+                    <span>*Deben ser 3 caracteres</span>
+                </div>
+    
+                <div class="campo" id="campo-nomb">
+                    <label for="nombre-tarjeta">Nombre que figura en la tarjeta: </label>
+                    <input type="text" id="nombre-tarjeta" formControlName="nombreTarjeta" (input)="soloLetras($event)">
+                </div>
+                <div class="error" *ngIf="validar('nombreTarjeta', 'required')">
+                    <span>*El campo es requerido</span>
+                </div>
+    
+                <div class="campo" id="campo-dni">
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" formControlName="dni" (input)="soloNumeros($event)">
+                </div>
+                <div class="error" *ngIf="validar('dni', 'required')">
+                    <span>*El campo es requerido</span>
+                </div>
+    
+                <div class="campo" id="campo-fecha">
+                    <label for="fecha-caducidad">Fecha de Vencimiento:</label>
+                    <input type="month" id="fecha-caducidad" name="fecha_vencimiento" formControlName="fechaCaducidad" (change)="onMonthYearChange($event)">
+                    <br>
+                </div>
+                <div class="error" *ngIf="validar('fechaCaducidad', 'required')">
+                    <span>*El campo es requerido</span>
+                </div>
+    
+                <div class="campo"  id="campo-subm">
+                    <input type="submit" id="submit" value="Guardar Tarjeta">
+                </div>
+            </form>
+        </fieldset>
+</section>

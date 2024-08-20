@@ -1,0 +1,39 @@
+<main>
+    <section class="contenedor-formulario">
+        <fieldset>
+            <legend>Editar Empleado</legend>
+            <form action="" method="post" id="formulario" (ngSubmit)="editarAdminHttp()" [formGroup]="formulario">
+                <div class="campo">
+                    <label for="id">ID: </label>
+                    <input type="text" id="id" name="id" formControlName="id" [attr.readonly]="true">
+                </div>
+                <div class="campo">
+                    <label for="usuario">Usuario: </label>
+                    <input type="text" id="usuario" name="usuario" formControlName="usuario">
+                </div>
+                <div class="campo">
+                    <label for="contraseña">Contraseña: </label>
+                    <input type="{{ mostrarContrasenia ? 'text' : 'password' }}" id="contraseña" name="contraseña"
+                        formControlName="contraseña">
+                </div>
+                <div class="campo">
+                    <label for="toggleMostrarContraseña">Mostrar contraseña</label>
+                    <input type="checkbox" name="mostrarContraseña" id="toggleMostrarContraseña"
+                        (click)="toggleMostrarContrasenia()">
+                </div>
+                <div class="campo">
+                    <label for="contraseña">Categoria: </label>
+                    <select id="categoria" name="categoria" formControlName="categoria">
+                        <option value="" disabled selected>Seleccione categoría</option>
+                        <option value="administrador">Administrador</option>
+                        <option value="empleado">Empleado</option>
+                    </select>
+                </div>
+                <div class="inputs">
+                    <input class="editar" type="submit" value="Editar Empleado" id="editar">
+                    <input class="cancelar" type="button" value="Cancelar" [routerLink]="['/lista-admins']" />
+                </div>
+            </form>
+        </fieldset>
+    </section>
+</main>

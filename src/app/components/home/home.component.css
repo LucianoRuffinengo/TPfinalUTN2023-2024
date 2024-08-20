@@ -1,0 +1,194 @@
+
+.recomendations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.contenedor div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.imagen-libro {
+  height: 20rem;
+  width: 13rem;
+
+}
+
+.product {
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  margin: 2rem;
+}
+
+h3 {
+  text-align: center;
+}
+
+
+.contenedor-lista {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.titulo-categorias{
+  text-align: left;
+  padding-left: 4rem;
+  font-size: 2.5rem;
+  }
+
+.contenedor-4-elementos {
+  width: 70%;
+  
+}
+
+.contenedor-elemento {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  flex: 1;
+}
+
+
+.div-leyenda {
+  width: 40%;
+}
+
+.titulo-novela{
+  padding-left: 2rem;
+}
+
+.titulo{
+  padding-left: 2rem;
+}
+
+.boton-contenedor{
+  align-items: center;
+  border: thin solid #0f47f2;
+  border-radius: 0.625rem;
+  color: #0f47f2;
+  display: inline-flex;
+  margin: 0 2.5rem;
+  padding: 0.625rem 1.25rem;
+}
+
+.boton-contenedor p{
+  margin: 0;
+}
+
+.div-imagenes {
+  width: 60%;
+  order: 2;
+}
+
+.div-leyenda{
+  width: 40%;
+  order: 1;
+}
+
+.div-imagenes img {
+  height: 20rem;
+  max-height: 20rem;
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+
+}
+
+
+.contenedor-4-elementos .contenedor-elemento:nth-child(2) .div-leyenda,
+.contenedor-4-elementos .contenedor-elemento:nth-child(4) .div-leyenda{
+  order: 2;
+}
+
+.contenedor-4-elementos .contenedor-elemento:nth-child(2) .div-imagenes,
+.contenedor-4-elementos .contenedor-elemento:nth-child(4) .div-imagenes{
+  order: 1;
+}
+
+@media (max-width:1400px){
+  .contenedor-4-elementos{
+    width: 90%;
+  }
+  .div-imagenes img{
+    height: 15rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .imagen-libro {
+    height: 15rem;
+    width: 9rem;
+  }
+  .div-imagenes img{
+    height: 20rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .contenedor{
+    flex-direction: column;
+  }
+  .titulo-categorias{
+    padding-left: 0;
+    font-size: 1.5rem;
+  }
+  .contenedor-elemento{
+    flex-direction: column;
+  }
+  .div-imagenes{
+    width: 100%;
+    order: 1;
+  }
+  .div-leyenda{
+    width: 100%;
+    order: 2;
+  }
+  .titulo-novela, .titulo{
+    padding-left: 0;
+  }
+  .boton-contenedor{
+    margin: 0;
+  }
+   
+  .titulo-novela{
+    font-size: 1rem;
+  }
+  .titulo{
+    font-size: .75rem;
+  }
+  .boton-contenedor p{
+    font-size: .75rem;
+  }
+  .product p{
+    font-size: .8rem;
+  }
+  h3{
+    font-size: .9rem;
+  }
+}
+
+

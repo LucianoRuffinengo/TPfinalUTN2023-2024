@@ -1,0 +1,81 @@
+main{
+    background-image: url(src\assets\images\libros-antiguos-2644117.png);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0; /* Asegura que no haya margen en el cuerpo */
+    padding: 0; /* Asegura que no haya relleno en el cuerpo */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-formulario{
+    width: 50%;
+    height: 30%;
+    background-color: beige;
+    padding: 1rem;
+}
+
+fieldset{
+    border: 0.8px solid #e1e1e1;
+}
+
+legend{
+    text-align: center;
+    margin: 1rem;
+    font-size: larger;
+}
+
+.campo input[type="password"]
+{
+    margin-bottom: 1rem;
+    width: 100%;
+    border: .8px solid #e1e1e1;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+}
+
+.editar,
+.cancelar{
+    background-color: #e1e1e1;
+    border: none;
+    width: 60%;
+}
+
+.editar:hover{
+    transition: .3s;
+    background-color: rgb(133, 198, 68);
+    color: #fff;
+}
+.cancelar:hover{
+    transition: .3s;
+    background-color: red;
+    color: #fff;
+}
+.campo:nth-child(4){
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+
+@media (max-width:900px) {
+    .contenedor-formulario{
+        width: 90%;
+    }
+    label{
+        font-size: .9rem;
+    }
+}
+
+@media (max-width:450px){
+    .contenedor-formulario{
+        width: 90%;
+    }
+}

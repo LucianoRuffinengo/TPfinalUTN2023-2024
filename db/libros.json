@@ -1,0 +1,504 @@
+{
+  "librosStock": [
+    {
+      "id": 1,
+      "precio": 10.99,
+      "stock": 0
+    },
+    {
+      "id": 2,
+      "precio": 26.39,
+      "stock": 18
+    },
+    {
+      "id": 3,
+      "precio": 25.99,
+      "stock": 11
+    },
+    {
+      "id": 4,
+      "precio": 18.99,
+      "stock": 17
+    },
+    {
+      "id": 5,
+      "precio": 7.99,
+      "stock": 39
+    },
+    {
+      "id": 6,
+      "precio": 12.99,
+      "stock": 52
+    },
+    {
+      "id": 7,
+      "precio": 8.49,
+      "stock": 63
+    },
+    {
+      "id": 8,
+      "precio": 29.99,
+      "stock": 8
+    },
+    {
+      "id": 9,
+      "precio": 14.99,
+      "stock": 25
+    },
+    {
+      "id": 10,
+      "precio": 43.99,
+      "stock": 90
+    },
+    {
+      "id": 11,
+      "precio": 21.49,
+      "stock": 44
+    },
+    {
+      "id": 12,
+      "precio": 9.99,
+      "stock": 60
+    },
+    {
+      "id": 13,
+      "precio": 16.99,
+      "stock": 34
+    },
+    {
+      "id": 14,
+      "precio": 6.49,
+      "stock": 75
+    },
+    {
+      "id": 15,
+      "precio": 22.99,
+      "stock": 15
+    },
+    {
+      "id": 16,
+      "precio": 17.99,
+      "stock": 28
+    },
+    {
+      "id": 17,
+      "precio": 4.99,
+      "stock": 85
+    },
+    {
+      "id": 18,
+      "precio": 11.49,
+      "stock": 49
+    },
+    {
+      "id": 19,
+      "precio": 29.99,
+      "stock": 5
+    },
+    {
+      "id": 20,
+      "precio": 8.99,
+      "stock": 69
+    },
+    {
+      "id": 21,
+      "precio": 15.99,
+      "stock": 40
+    },
+    {
+      "id": 22,
+      "precio": 7.49,
+      "stock": 79
+    },
+    {
+      "id": 23,
+      "precio": 23.99,
+      "stock": 19
+    },
+    {
+      "id": 24,
+      "precio": 18.49,
+      "stock": 25
+    },
+    {
+      "id": 25,
+      "precio": 5.99,
+      "stock": 59
+    },
+    {
+      "id": 26,
+      "precio": 12.49,
+      "stock": 45
+    },
+    {
+      "id": 27,
+      "precio": 30.99,
+      "stock": 9
+    },
+    {
+      "id": 28,
+      "precio": 9.49,
+      "stock": 70
+    },
+    {
+      "id": 29,
+      "precio": 16.99,
+      "stock": 35
+    },
+    {
+      "id": 30,
+      "precio": 6.99,
+      "stock": 50
+    },
+    {
+      "id": 31,
+      "precio": 24.49,
+      "stock": 14
+    },
+    {
+      "id": 32,
+      "precio": 19.99,
+      "stock": 28
+    },
+    {
+      "id": 33,
+      "precio": 8.99,
+      "stock": 54
+    },
+    {
+      "id": 34,
+      "precio": 13.49,
+      "stock": 40
+    },
+    {
+      "id": 35,
+      "precio": 31.99,
+      "stock": 5
+    },
+    {
+      "id": 36,
+      "precio": 10.49,
+      "stock": 64
+    },
+    {
+      "id": 37,
+      "precio": 17.99,
+      "stock": 25
+    },
+    {
+      "id": 38,
+      "precio": 7.99,
+      "stock": 80
+    },
+    {
+      "id": 39,
+      "precio": 25.49,
+      "stock": 20
+    },
+    {
+      "id": 40,
+      "precio": 20.99,
+      "stock": 35
+    },
+    {
+      "id": 41,
+      "precio": 9.99,
+      "stock": 60
+    },
+    {
+      "id": 42,
+      "precio": 14.49,
+      "stock": 45
+    },
+    {
+      "id": 43,
+      "precio": 32.99,
+      "stock": 10
+    },
+    {
+      "id": 44,
+      "precio": 11.99,
+      "stock": 70
+    },
+    {
+      "id": 45,
+      "precio": 18.99,
+      "stock": 25
+    },
+    {
+      "id": 46,
+      "precio": 8.49,
+      "stock": 75
+    },
+    {
+      "id": 47,
+      "precio": 26.49,
+      "stock": 15
+    },
+    {
+      "id": 48,
+      "precio": 21.99,
+      "stock": 30
+    },
+    {
+      "id": 49,
+      "precio": 10.99,
+      "stock": 49
+    },
+    {
+      "id": 50,
+      "precio": 15.49,
+      "stock": 40
+    },
+    {
+      "id": 51,
+      "precio": 7.49,
+      "stock": 80
+    },
+    {
+      "id": 52,
+      "precio": 23.49,
+      "stock": 20
+    },
+    {
+      "id": 53,
+      "precio": 19.99,
+      "stock": 35
+    },
+    {
+      "id": 54,
+      "precio": 9.99,
+      "stock": 60
+    },
+    {
+      "id": 55,
+      "precio": 16.49,
+      "stock": 45
+    },
+    {
+      "id": 56,
+      "precio": 33.99,
+      "stock": 10
+    },
+    {
+      "id": 57,
+      "precio": 12.99,
+      "stock": 70
+    },
+    {
+      "id": 58,
+      "precio": 19.49,
+      "stock": 25
+    },
+    {
+      "id": 59,
+      "precio": 8.99,
+      "stock": 74
+    },
+    {
+      "id": 60,
+      "precio": 27.49,
+      "stock": 15
+    },
+    {
+      "id": 61,
+      "precio": 22.99,
+      "stock": 29
+    },
+    {
+      "id": 62,
+      "precio": 11.49,
+      "stock": 55
+    },
+    {
+      "id": 63,
+      "precio": 17.49,
+      "stock": 40
+    },
+    {
+      "id": 64,
+      "precio": 7.99,
+      "stock": 60
+    },
+    {
+      "id": 65,
+      "precio": 16.99,
+      "stock": 45
+    },
+    {
+      "id": 66,
+      "precio": 34.99,
+      "stock": 10
+    },
+    {
+      "id": 67,
+      "precio": 13.99,
+      "stock": 70
+    },
+    {
+      "id": 68,
+      "precio": 20.49,
+      "stock": 25
+    },
+    {
+      "id": 69,
+      "precio": 9.99,
+      "stock": 75
+    },
+    {
+      "id": 70,
+      "precio": 28.49,
+      "stock": 15
+    },
+    {
+      "id": 71,
+      "precio": 23.99,
+      "stock": 30
+    },
+    {
+      "id": 72,
+      "precio": 12.49,
+      "stock": 55
+    },
+    {
+      "id": 73,
+      "precio": 18.49,
+      "stock": 40
+    },
+    {
+      "id": 74,
+      "precio": 8.99,
+      "stock": 60
+    },
+    {
+      "id": 75,
+      "precio": 17.99,
+      "stock": 45
+    },
+    {
+      "id": 76,
+      "precio": 35.99,
+      "stock": 10
+    },
+    {
+      "id": 77,
+      "precio": 14.99,
+      "stock": 70
+    },
+    {
+      "id": 78,
+      "precio": 21.49,
+      "stock": 25
+    },
+    {
+      "id": 79,
+      "precio": 10.99,
+      "stock": 74
+    },
+    {
+      "id": 80,
+      "precio": 29.49,
+      "stock": 15
+    },
+    {
+      "id": 81,
+      "precio": 24.99,
+      "stock": 30
+    },
+    {
+      "id": 82,
+      "precio": 13.49,
+      "stock": 55
+    },
+    {
+      "id": 83,
+      "precio": 19.99,
+      "stock": 40
+    },
+    {
+      "id": 84,
+      "precio": 9.99,
+      "stock": 60
+    },
+    {
+      "id": 85,
+      "precio": 18.99,
+      "stock": 45
+    },
+    {
+      "id": 86,
+      "precio": 36.99,
+      "stock": 10
+    },
+    {
+      "id": 87,
+      "precio": 15.99,
+      "stock": 68
+    },
+    {
+      "id": 88,
+      "precio": 22.49,
+      "stock": 25
+    },
+    {
+      "id": 89,
+      "precio": 11.99,
+      "stock": 75
+    },
+    {
+      "id": 90,
+      "precio": 30.49,
+      "stock": 15
+    },
+    {
+      "id": 91,
+      "precio": 25.99,
+      "stock": 30
+    },
+    {
+      "id": 92,
+      "precio": 14.49,
+      "stock": 55
+    },
+    {
+      "id": 93,
+      "precio": 20.99,
+      "stock": 40
+    },
+    {
+      "id": 94,
+      "precio": 10.99,
+      "stock": 60
+    },
+    {
+      "id": 95,
+      "precio": 19.99,
+      "stock": 45
+    },
+    {
+      "id": 96,
+      "precio": 37.49,
+      "stock": 10
+    },
+    {
+      "id": 97,
+      "precio": 15.49,
+      "stock": 70
+    },
+    {
+      "id": 98,
+      "precio": 23.99,
+      "stock": 25
+    },
+    {
+      "id": 99,
+      "precio": 12.99,
+      "stock": 75
+    },
+    {
+      "id": 100,
+      "precio": 31.49,
+      "stock": 15
+    }
+  ]
+}

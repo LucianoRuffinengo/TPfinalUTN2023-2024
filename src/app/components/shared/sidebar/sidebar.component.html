@@ -1,0 +1,7 @@
+<div class="select-container">
+    <h3>FILTRAR POR CATEGORIA</h3>
+   <select class="select-box" (change)="navigateToCategory($event)">
+    <option class="encabezado" value="">Seleccione un genero</option>
+    <option *ngFor="let genero of listadoGeneros" [value]="genero">{{ genero }}</option>
+  </select>
+</div>

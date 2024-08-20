@@ -1,0 +1,112 @@
+
+thead th {
+    background-color: #5e6266;
+    color: #fff;
+    text-align: left;
+    padding: 1rem;
+}
+
+tbody td {
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    padding: 1rem;
+}
+
+a {
+    display: inline-block;
+    padding: 20px 40px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    font-size: x-large;
+}
+
+.btnCompra {
+    background-color: #76c879;
+    color: #fff;
+}
+
+.btnCompra:hover {
+    background-color: #45a049;
+    transition: background-color 0.3s
+}
+
+.btnRechazar{
+    background-color: rgb(212, 34, 34);
+    color: #fff;
+}
+
+.btnRechazar:hover{
+    background-color: rgb(179, 34, 34);
+    transition: background-color 0.3s
+}
+
+.btnMetodo {
+    margin-left: .5rem;
+    padding: .5rem;
+    font-size: 1.3rem;
+    background-color: #3f4245;
+    color:  #fff;
+}
+
+.btnMetodo:hover {
+    background-color: rgba(32, 29, 56, 0.521);
+    transition: background-color 0.3s
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-btn {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.sel-tarjeta {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.label {
+    margin-right: 1rem;
+}
+
+@media (max-width:450px) {
+    a{
+        padding: none;
+    }
+
+    .cont-btn {
+        font-size: x-small;
+        height: 60px;
+        gap: 1rem;
+        padding: .5rem;
+    }
+
+    .btnMetodo{
+        font-display: left;
+        font-size: 12px;
+        padding-top: .7rem;
+    }
+
+    .btnCompra{
+        font-display: left;
+        font-size: 17px;
+        padding: .7rem;
+    }
+
+    .btnRechazar{
+        font-display: left;
+        font-size: 17px;
+        padding: .7rem;
+    }
+}

@@ -1,0 +1,133 @@
+section {
+    background-image: url(src\assets\images\libros-antiguos-2644117.png);
+     background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+
+.contenedor {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+  }
+  
+  
+  h1{
+    color: white;
+  }
+  
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+  }
+  
+  
+  thead th {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 1rem;
+  }
+  
+  
+  tbody td {
+    border: 1px solid #ccc;
+    padding: 1rem;
+  }
+  
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  tbody tr:nth-child(odd) {
+    background-color: beige;
+  }
+  
+  
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  /**/
+
+  header {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    }
+    
+    .imagen{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      }
+    
+    .navegacion{
+    
+      display: flex;
+      width: 100%; 
+      justify-content: center;
+    }
+    
+    .logout{
+      background-color: #3f4245;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      width: 100%;
+    }
+    
+    .admin-links{
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+    }
+    
+    .logout a{
+      margin-right: 1rem;
+      color: rgba(233, 227, 227, 0.861);
+    }
+    
+    .logout a:hover{
+      color: white;
+    }
+    
+    .opciones{
+      display: flex;
+      justify-content: center;
+    }
+    
+    .links a{
+      color: rgba(233, 227, 227, 0.861)
+    }
+    
+    .links div a:hover{
+      color: white;
+    }
+  
+  
+  @media (max-width:435px){
+    .contenedor-ppal{
+      width: 100%;
+    }
+    /* section{
+      width: 200%;
+    } */
+    
+  }

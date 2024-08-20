@@ -1,0 +1,20 @@
+<section class="contenedor-principal">
+    <div class="filter-container">
+        <app-sidebar></app-sidebar>
+        <app-sidebar2></app-sidebar2>
+    </div>
+    <div class="contenedor-lista-libros">
+        <h2>Todos nuestros libros</h2>
+        <div class="lista-libros">
+            <div class="libro" *ngFor="let item of listadoLibrosFiltrados; let i=index">
+                <a href="" [routerLink]="['/producto',item.id]">
+                    <img class="imagen-libro" [src]="item.image_url" alt="{{ item.title }}">
+                </a>
+                <div class="product">
+                    <h3>{{item.title}}</h3>
+                    <p>${{ stockID && stockID[i] ? stockID[i].precio : '' }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,162 @@
+thead th {
+    background-color: #3f4245;
+    color: #fff;
+    text-align: left;
+    padding: 1rem;
+}
+
+
+tbody td {
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    padding: 1rem;
+}
+
+a {
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+.btnVaciar {
+    background-color: #3f4245;
+    font-size: 1.5rem;
+    padding: 20px 40px;
+    color: #fff;
+}
+
+.btnCompra {
+    background-color: #3f4245;
+    font-size: 1.5rem;
+    padding: 20px 40px;
+    color: #fff;
+}
+
+.btnEliminar {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: rgb(211, 56, 8);
+    position: relative;
+}
+
+.btnEliminar:hover {
+    background-color: rgb(165, 44, 8);
+    transition: background-color 0.3s
+}
+
+.btnEliminar::before,
+.btnEliminar::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 2px;
+    background-color: #fff;
+    transform-origin: center;
+}
+
+.btnEliminar::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.btnEliminar::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.btnVaciar:hover {
+
+    background-color: rgb(165, 44, 8);
+    transition: background-color 0.3s
+}
+
+.btnCompra:hover {
+    background-color: #45a049;
+    transition: background-color 0.3s
+}
+
+.imagen {
+    width: 5rem;
+    height: 8rem;
+}
+
+.tablaCarr {
+    margin-bottom: 1rem;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-btn {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:600px) {
+    .mensaje{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:450px) {
+    a{
+        padding: 0px;
+    }
+    
+    .td {
+        display: none;
+    }
+
+    .btnEliminar {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .btnEliminar::before,
+    .btnEliminar::after {
+        width: 10px;
+        height: 3px;
+    }
+
+    .btnEliminar::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .btnEliminar::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .cont-btn {
+        height: 60px;
+        gap: 1rem;
+        padding: .5rem;
+    }
+
+    .btnVaciar {
+        font-display: left;
+        font-size: 17px;
+        padding: .7rem;
+    }
+
+    .btnCompra{
+        font-display: left;
+        font-size: 17px;
+        padding: .7rem;
+    }
+}

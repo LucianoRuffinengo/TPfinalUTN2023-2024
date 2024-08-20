@@ -1,0 +1,184 @@
+<div class="contenedor">
+    <div class="contenedor-imagen">
+        <img class="imagen" [src]="libro2?.image_url" alt="{{ libro2?.title }}">
+    </div>
+    <div class="line"></div>
+    <div class="descripcion">
+        <div class="titulo-autor-precio">
+            <h1>{{libro2?.title}}</h1>
+            <h4>{{libro2?.authors}}</h4>
+            <h2>$ {{libroStock?.precio}}</h2>
+        </div>
+        <div class="metodos">
+            <section class="modal" id="modal">
+                <div class="modal__container">
+                    <div class="modal__header">
+                        <p class="modal__titular">
+                            <i class="fa fa-credit-card" aria-hidden="true"></i>
+                            <span style="font-weight: bold; font-size: 18px;">Pagos</span>
+                        </p>
+                        <a style="cursor: pointer;" (click)="irAtras()" class="modal__close">X</a>
+                    </div>
+                    <div class="modal__mensaje">
+                        <h3>En Argentina</h3>
+                        <p class="modal__subtitulo">Para compras dentro de la Argentina, las formas de pago son:</p>
+                        <p>> Depósito o transferencia en nuestra cuenta bancaria: luego de realizar tu pedido, recibirás
+                            un correo electrónico con los datos necesarios para efectuar el pago.</p>
+                        <p>> Tarjetas de créditos: Visa, Mastercard y American Express.</p>
+                        <p>> MercadoPago</p>
+                        <p>> Mobbex</p>
+                        <p>> RapiPago o Pago Fácil: recibirás un cupón de pago a tu casilla de correo electrónico para
+                            presentar en cualquiera de las sucursales.</p>
+                            <hr>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="modal" id="modal2">
+                <div class="modal__container">
+                    <div class="modal__header">
+                        <p class="modal__titular">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span style="font-weight: bold; font-size: 18px;">Envios</span>
+                        </p>
+                        <!-- <a href="/producto/{{libro2?.id}}" class="modal__close">X</a> -->
+                        <a style="cursor: pointer;" (click)="irAtras()" class="modal__close">X</a>
+                    </div>
+                    <div class="titulo_tabla">
+                       <h3>Tiempo de Envio</h3> 
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Localidad</th>
+                                <th>Tiempo de Envio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mar del Plata</td>
+                                <td>Durante el día</td>
+                            </tr>
+                            <tr>
+                                <td>Capital Federal</td>
+                                <td>2-3 dias habiles</td>
+                            </tr>
+                            <tr>
+                                <td>Provincia de Buenos Aires</td>
+                                <td>2-4 dias habiles</td>
+                            </tr>
+                            <tr>
+                                <td>Resto del país</td>
+                                <td>3-5 dias habiles</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    
+                    <div class="titulo_tabla">
+                        <h3>Costos de Envio</h3> 
+                     </div>
+                     <table>
+                        <thead>
+                            <tr>
+                                <th>Region</th>
+                                <th>Costo Fijo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mar del Plata</td>
+                                <td>$ 750</td>
+                            </tr>
+                            <tr>
+                                <td>Buenos Aires (GBA)</td>
+                                <td>$ 1150</td>
+                            </tr>
+                            <tr>
+                                <td>Buenos Aires (Interior)</td>
+                                <td>$ 1650</td>
+                            </tr>
+                            <tr>
+                                <td>CABA</td>
+                                <td>$ 1150</td>
+                            </tr>
+                            <tr>
+                                <td>Resto del país</td>
+                                <td>$ 1850</td>
+                            </tr>
+                        </tbody>
+                     </table>
+                     
+                </div>
+            </section>
+
+
+
+            <a href="/producto/{{libro2?.id}}#modal" target="_self" class="open">Medios de Pago</a>
+            <a href="/producto/{{libro2?.id}}#modal2" target="_self" class="open">Costo de Envío</a>
+        </div>
+
+        <div class="botones">
+            <a class="boton-compra" (click)="agregarCarrito(libro2!, libroStock!.precio)">COMPRAR</a>
+            <a class="boton-favoritos" [ngClass]="{'clicked': isClicked}" (click)="cambiarColor()">AGREGAR A
+                FAVORITOS</a>
+            <div *ngIf="mensaje" class="mensaje-popup">{{ mensaje }}</div>
+        </div>
+    </div>
+</div>
+
+<div class="producto-descripcion">
+    <div class="descripcion2">
+        <span>DESCRIPCION</span>
+    </div>
+    <div class="sinopsis">
+        <h4>Sinopsis del Libro</h4>
+        <p>{{libro2?.description}}</p>
+    </div>
+</div>
+<div class="producto-descripcion">
+    <div class="descripcion2">
+        <span>AUTOR/ES</span>
+    </div>
+    <div class="sinopsis">
+        <h4>Autor</h4>
+        <p>{{libro2?.authors}}</p>
+    </div>
+</div>
+<div class="producto-descripcion">
+    <div class="descripcion2">
+        <span>GENERO</span>
+    </div>
+    <div class="sinopsis">
+        <h4>Generos</h4>
+        <p>{{libro2?.genres}}</p>
+    </div>
+</div>
+<div class="producto-descripcion">
+    <div class="descripcion2">
+        <span>CANTIDAD DE PAGINAS</span>
+    </div>
+    <div class="sinopsis">
+        <h4>Paginas</h4>
+        <p>{{libro2?.num_pages}} pages</p>
+    </div>
+</div>
+<div class="producto-descripcion">
+    <div class="descripcion2">
+        <span>EDICIÓN</span>
+    </div>
+    <div class="sinopsis">
+        <h4>Edicion</h4>
+        <p>{{libro2?.edition}}</p>
+    </div>
+</div>
+<div class="producto-descripcion">
+    <div class="descripcion2">
+        <span>FORMATO</span>
+    </div>
+    <div class="sinopsis">
+        <h4>Formato</h4>
+        <p>{{libro2?.format}}</p>
+    </div>
+</div>

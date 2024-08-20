@@ -1,0 +1,25 @@
+.select-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+ .select-box{
+    appearance: none;
+    border: none;
+    padding: .5rem .5rem;
+    color: rgba(233, 227, 227, 0.861);
+    background-color: #3f4245;
+    font-size: 1.2rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.encabezado{
+    text-align: center;
+}
+
+@media (max-width:1400px) {
+    .select-box{
+       font-size: 1rem;
+    }
+}

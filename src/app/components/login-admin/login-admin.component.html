@@ -1,0 +1,39 @@
+<main>
+    <header>
+        <nav class="navegacion">
+            <div class="imagen">
+                <a href="" routerLink="home">
+                    <img class="logo" src="../assets/images/fondo.png" alt="">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <section class="seccion"  [formGroup]="formulario">
+        <fieldset>
+            <legend>Iniciar Sesion</legend>
+            <form action="" (ngSubmit)="iniciarSession()" [formGroup]="formulario">
+                <div class="campo">
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" id="usuario" formControlName="usuario">
+                </div>
+                <div class="error">
+                    <span class="error" *ngIf="formulario.controls['usuario'].getError('required')&&formulario.touched">El campo es
+                     requerido</span> 
+                 </div>
+                <div class="campo">
+                    <label for="contraseña">Contraseña:</label>
+                    <input class="pass" type="password" id="contraseña" formControlName="contraseña">
+                </div>
+                <div class="error">
+                    <span class="error" *ngIf="formulario.controls['contraseña'].getError('required')&&formulario.touched">El campo es
+                      requerido</span>  
+                  </div>
+                <div class="input">
+                   <input class="inicioSesion" type="submit" value="Iniciar Sesion"> 
+                </div>
+                
+            </form>
+            
+        </fieldset>
+    </section>
+</main>

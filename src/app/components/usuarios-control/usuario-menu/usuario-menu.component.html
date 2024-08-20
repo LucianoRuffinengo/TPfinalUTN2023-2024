@@ -1,0 +1,13 @@
+<main>
+    <div *ngIf="flag;
+then thenBlock
+else elseBlock"></div>
+
+    <ng-template #thenBlock>
+        <app-access-manager></app-access-manager>
+    </ng-template>
+
+    <ng-template #elseBlock>
+        <app-data-manager></app-data-manager>
+    </ng-template>
+</main>

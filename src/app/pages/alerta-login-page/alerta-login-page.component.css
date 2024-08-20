@@ -1,0 +1,49 @@
+.a{
+    cursor: pointer;
+    color: white;
+}
+/* main{
+    min-height: 55vh;
+} */
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+h2{
+    padding: 2rem;
+    border: 5px solid #5e6266;
+    background-color: #a6acb4;
+    color: white;
+    border-radius: 20px;
+}
+
+@media (max-width:450px) {
+    section{
+        font-size: .7rem;
+        padding: .5rem;
+    }
+}
+
+@media (min-width:450px){
+    section{
+        font-size: .8rem;
+        padding: .5rem;
+    }
+}
+
+@media (min-width:800px){
+    section{
+        font-size: 1rem;
+        padding: .5rem;
+    }
+}
+
+@media (min-width:1165px){
+    section{
+        font-size: 1rem;
+        padding: .5rem;
+    }
+}

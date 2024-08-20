@@ -1,0 +1,84 @@
+<section>
+
+    <header class="navegacion">
+        <div class="imagen">
+            <a href="">
+                <img class="logo" src="../assets/images/fondo.png" alt="">
+            </a>
+            <nav class="links">
+                <div class="opciones" *ngIf="getAdmin?.categoria==='administrador'; else noCoincidencias">
+
+                    <div class="admin-links">
+                        <a style="cursor: pointer;" [routerLink]="['/nuevo-admin']">Crear Administrador</a>
+                        <a style="cursor: pointer;"[routerLink]="['/lista-admins']">Editar/Eliminar Empleado</a>
+                    </div>
+
+                    <div class="admin-links">
+                        <a (click)="logout2()" style="cursor: pointer;">CERRAR SESION</a>
+                        <a style="color: white;" class="usuario">¡Hola {{getAdmin?.usuario}}!</a>
+                    </div>
+                </div>
+                <ng-template #noCoincidencias>
+                    <div class="opciones">
+                        <a (click)="logout2()" style="cursor: pointer;">CERRAR SESION</a>
+                        <a style="color: white;" class="usuario">¡Hola {{getAdmin?.usuario}}!</a>
+                    </div>
+                </ng-template>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contenedor-ppal">
+        <div class="contenedor">
+            <h1>Listado de Clientes</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Mail</th>
+                        <th>DNI</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of listadoUsuarios">
+                        <td>{{item.id}}</td>
+                        <td>{{item.nombre}}</td>
+                        <td>{{item.apellido}}</td>
+                        <td>{{item.mail}}</td>
+                        <td>{{item.documento}}</td>
+                        <td><a style="cursor: pointer;" (click)="eliminarClienteHttp(item.id)">Eliminar</a></td>
+                        <td><a [routerLink]="['/usuario', item.id]">Editar</a></td> <!-- /editar/6 -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="contenedor">
+            <h1>Listado de Productos</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Titulo</th>
+                        <th>Autor/es</th>
+                        <th>Edition</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of listadoLibros;let i=index">
+                        <td>{{item.id}}</td>
+                        <td>{{item.title}}</td>
+                        <td>{{item.authors}}</td>
+                        <td>{{item.edition}}</td>
+                        <td>{{ listadoStock && listadoStock[i] ? listadoStock[i].precio : '' }}</td>
+                        <td>{{ listadoStock && listadoStock[i] ? listadoStock[i].stock : '' }}</td>
+                        <td><a href="" [routerLink]="['/libro', item.id]">Editar</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,11 @@
+.mensaje{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+@media (max-width:500px) {
+  .mensaje{
+    padding: 2rem;
+}
+}

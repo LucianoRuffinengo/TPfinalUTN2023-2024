@@ -1,0 +1,50 @@
+<main class="principal">
+    <app-navbar></app-navbar>
+    <section>
+        <h2 class="titulo">Historial de compras</h2>
+        <div *ngIf="flag; 
+        then thenBlock 
+        else elseBlock"></div>
+    
+        <ng-template #thenBlock>
+            <table class="contenedor-lista-his">
+                <thead>
+                    <tr>
+                        <th>Fecha de transacción</th>
+                        <th>Libros comprados</th>
+                        <th>Total pagado</th>
+                    </tr>
+                </thead>
+                <tbody class="listaHis">
+                    <tr *ngFor="let item of listaHisto">
+                        <td class="fecha">
+                            {{item.fecha|date:'yyyy-MM-dd'}}
+                        </td>
+    
+                        <td>
+                    <tr *ngFor="let libro of item.pedidos">
+                        <p class="libro" href="" [routerLink]="['/producto',libro.id]">{{libro.titulo}}
+    
+                            <a *ngIf="libro.cantidad!=1">: {{libro.cantidad}}</a>
+                        </p>
+                    </tr>
+    
+                    </td>
+                    <td>
+                        <p class="precio">{{item.total}}</p>
+                    </td>
+    
+                    </tr>
+                </tbody>
+            </table>
+        </ng-template>
+    
+        <ng-template #elseBlock>
+            <h3>¡Aun no se han comprado ningún libro!</h3>
+            <h4>¿Por que no revisa nuestro catalogo? Tal vez algo le interese c;</h4>
+        </ng-template>
+    </section>
+    <div class="footer">
+        <app-footer></app-footer>
+    </div>
+</main>

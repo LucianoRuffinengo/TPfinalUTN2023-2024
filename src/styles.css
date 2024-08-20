@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+html{
+    box-sizing: border-box;
+}
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: beige;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.principal{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer{
+    margin-top: auto;
+}
+
+a{
+    text-decoration: none;
+}
+.links a{
+    margin-right: 1rem;
+    color: rgba(233, 227, 227, 0.861);
+}
+
+.libro a{
+    transition: 1s;
+}
+
+.libro a:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.logo{
+    width: 17rem;
+    height: 9rem;
+}
+
+.links{
+    padding: .5rem;
+    background-color: #3f4245;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links div{
+    width: 70%;
+}
+
+.links a:hover{
+    color: white;
+}
+
+
+.campo{
+    display: flex;
+}
+
+.campo label{
+    flex-basis: 10rem;
+}
+
+.campo input[type="text"],
+.campo input[type="number"],
+.campo input[type="date"],
+.campo select
+{
+    margin-bottom: 1rem;
+    width: 100%;
+    border: .8px solid #e1e1e1;
+}
+
+.campo input[type="submit"]{
+    margin-bottom: 1rem;
+    border: .8px solid #e1e1e1;
+}

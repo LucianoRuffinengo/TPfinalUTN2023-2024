@@ -1,0 +1,36 @@
+thead th {
+    background-color: #5e6266;
+    color: #fff;
+    text-align: left;
+    padding: 1rem;
+}
+
+tbody td{
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    min-width: 30 px;
+    text-align: center;
+}
+
+
+
+.libro{
+    border:1 px solid;
+    min-width: 300 px;
+    text-align: left;
+}
+
+.precio{
+    border:1 px solid;
+    min-width: 30 px;
+    text-align: center;
+}
+
+section{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,51 @@
+<main>
+    <section class="seccion">
+        <fieldset>
+            <legend>Nuevo Administrador</legend>
+            <form action="" method="post" id="formulario" [formGroup]="userForm" (ngSubmit)="guardar()">
+                <div class="campo">
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" id="usuario" formControlName="usuario" required>
+                </div>
+                <div>
+                    <span class="error" *ngIf="userForm.get('usuario')?.hasError('minlength')">
+                        El usuario debe tener al menos 6 caracteres.
+                    </span>
+                </div>
+                <div class="campo">
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="contraseña" formControlName="contraseña" required>
+                </div>
+                <div>
+                    <span class="error"
+                        *ngIf="userForm.get('contraseña')?.hasError('minlength') || userForm.get('contraseña')?.hasError('maxlength')">
+                        La contraseña debe tener entre 6 y 12 caracteres.
+                    </span>
+                </div>
+                <div class="campo">
+                    <label for="confirmPassword">Repetir Contraseña:</label>
+                    <input type="password" id="confirmPassword" formControlName="confirmPassword" required>
+                </div>
+                <div>
+                    <span class="error" *ngIf="userForm.hasError('mismatch')">
+                        Las contraseñas no coinciden.
+                    </span>
+                </div>
+
+                <div class="campo">
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria" name="categoria" formControlName="categoria">
+                        <option value="" disabled selected>Seleccione categoría</option>
+                        <option value="administrador">Administrador</option>
+                        <option value="empleado">Empleado</option>
+                    </select>
+                </div>
+
+                <div class="inputs">
+                    <input class="editar" type="submit" value="Guardar Usuario" id="editar">
+                    <input class="cancelar" type="button" value="Cancelar" [routerLink]="['/admin']" />
+                </div>
+            </form>
+        </fieldset>
+    </section>
+</main>

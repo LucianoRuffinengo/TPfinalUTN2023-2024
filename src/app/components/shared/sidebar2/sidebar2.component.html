@@ -1,0 +1,7 @@
+<div class="select-container">
+    <h3>FILTRAR POR AUTORES</h3>
+   <select class="select-box" (change)="navigateToCategory($event)">
+    <option class="encabezado" value="">Seleccione un autor</option>
+    <option *ngFor="let autor of listadoAutores" [value]="autor">{{ autor }}</option>
+  </select>
+  </div>

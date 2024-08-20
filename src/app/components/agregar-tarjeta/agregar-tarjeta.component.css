@@ -1,0 +1,306 @@
+.campo {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    flex-basis: 22rem;
+    color: white;
+}
+
+.campo input[type="text"],
+.campo input[type="number"] {
+    width: 100%;
+    border: .8px solid #e1e1e1;
+    padding: .2rem;
+    border-radius: 5px;
+}
+
+.campo input[type="month"] {
+    padding: .2rem;
+    border-radius: 5px;
+    margin-right: 68.7rem;
+    width: 15%;
+}
+
+.campo input[type="submit"] {
+    margin-bottom: 1rem;
+    border: .8px solid #e1e1e1;
+}
+
+#submit {
+    background-color: #333538;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 42rem;
+}
+
+#submit:hover {
+    background-color: #45a049;
+    transition: background-color 0.3s
+}
+
+.seccion {
+    min-height: 55vh;
+    width: 50%;
+    margin: 0 auto;
+    background-color: beige;
+    padding: 1rem;
+}
+
+.seccion fieldset {
+    border: .8px solid #e1e1e1;
+    background-color: #5e6266;
+    border-radius: 20px;
+}
+
+.error {
+    color: rgb(116, 78, 32);
+    margin-bottom: 1rem;
+}
+
+legend {
+    border: .8px solid #e1e1e1;
+    text-align: center;
+    margin: 1rem;
+    font-size: larger;
+    background-color: #5e6266;
+    color: white;
+    border-radius: 4px;
+}
+
+.error span {
+    background-color: rgb(216, 206, 206);
+    text-align: center;
+    color: red;
+    border-radius: 8px;
+    padding: .3rem;
+    font-size: 1rem;
+    margin-left: 5rem;
+}
+
+.formulario div {
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+@media (max-width:450px) {
+    .seccion {
+        margin-left: 0rem;
+    }
+
+    #formulario{
+        width: 25rem;
+    }
+
+    legend {
+        margin: .1rem;
+    }
+
+    .campo {
+        margin: 1.5rem;
+    }
+
+    .campo input[type="text"],
+    .campo input[type="number"] {
+        width: 10rem;
+    }
+
+    #campo-numT,
+    #campo-codS,
+    #campo-nomb,
+    #campo-dni {
+        margin-left: 0;
+    }
+
+    #campo-subm input{
+        margin-top: 2rem;
+        margin-left: 0rem;
+    }
+
+    #campo-fecha{
+        width: 25rem;
+        margin-left: 0;
+    }
+
+    #campo-fecha input{
+        width: 18rem;
+        margin-right: .5rem;
+        margin-left: 0;
+    }
+}
+
+@media (min-width:451px) {
+    .seccion {
+        margin-left: 2rem;
+    }
+
+    #formulario{
+        width: 25rem;
+    }
+
+    .campo input[type="text"],
+    .campo input[type="number"]{
+        width: 10rem;
+    }
+
+    legend {
+        margin: .1rem;
+    }
+
+    #campo-numT,
+    #campo-codS,
+    #campo-nomb,
+    #campo-dni {
+        width: 25rem;
+        margin-left: 0;
+    }
+
+    #campo-subm input{
+        margin-top: 2rem;
+        margin-left: 4.5rem;
+    }
+
+    #campo-fecha{
+        width: 25rem;
+        margin-left: 0;
+    }
+
+    #campo-fecha input{
+        width: 100rem;
+        margin-right: 0;
+        margin-left: 7rem;
+    }
+
+    .campo label{
+        flex-basis: 20rem;
+    }
+
+    .campo {
+        margin: 1.5rem;
+    }
+}
+
+@media (min-width:620px){
+    .seccion {
+        margin-left: 6rem;
+    }
+}
+
+@media (min-width:900px){
+    .seccion {
+        margin-left: 4rem;
+        margin-right: 0;
+    }
+    #formulario{
+        width: 45rem;
+    }
+
+    .campo input[type="text"],
+    .campo input[type="number"]{
+        width: 35rem;
+        /* margin-left: 20rem; */
+    }
+
+    #campo-numT,
+    #campo-codS,
+    #campo-nomb,
+    #campo-dni {
+        width: 45rem;
+        margin-left: 0;
+    }
+
+    #campo-fecha{
+        width: 45rem;
+        margin-left: 0;
+    }
+
+    #campo-fecha input{
+        width: 13rem;
+        margin-left: 4rem;
+    }
+
+    #campo-subm input{
+        margin-top: 2rem;
+        margin-left: 15rem;
+    }
+
+    .campo label{
+        flex-basis: 20rem;
+    }
+}
+
+@media (min-width:1100px){
+    .seccion {
+        margin-left: 10rem;
+    }
+}
+
+@media (min-width:1200px){
+    .seccion {
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+    #formulario{
+        width: 70rem;
+    }
+
+    .campo input[type="text"],
+    .campo input[type="number"]{
+        width: 50rem;
+        /* margin-left: 20rem; */
+    }
+
+    #campo-numT,
+    #campo-codS,
+    #campo-nomb,
+    #campo-dni {
+        width: 70rem;
+        margin-left: 0;
+    }
+
+    #campo-fecha{
+        width: 45rem;
+        margin-left: 0;
+    }
+
+    #campo-fecha input{
+        width: 16rem;
+        margin-left: 0rem;
+    }
+
+    #campo-subm input{
+        margin-top: 2rem;
+        margin-left: 27.5rem;
+    }
+
+    .campo label{
+        flex-basis: 20rem;
+    }
+}
+
+@media (min-width:1353px){
+    .seccion {
+        margin-left: 5rem;
+        margin-right: 0;
+    }
+}
+
+@media (min-width:1628px){
+    .seccion {
+        margin-left: 20rem;
+        margin-right: 0;
+    }
+}

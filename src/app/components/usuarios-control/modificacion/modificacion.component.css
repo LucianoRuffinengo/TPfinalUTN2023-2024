@@ -1,0 +1,69 @@
+.contenedor-modif{
+    text-align: center;
+}
+
+.botonGuar{
+    margin-right: 30px;
+    background-color: #A2A2A3;
+    font-size: 1.2rem;
+    
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 3%;
+    
+}
+
+
+
+.botonGuar:hover{
+    background-color: #3D49B6;
+    cursor: pointer;
+}
+
+
+.botonVolv{
+    background-color: #A2A2A3;
+    font-size: 1.2rem;
+    
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 3%;
+}
+
+.botonVolv:hover{
+    cursor:pointer;
+    background-color: #D33808;
+}
+
+input{
+    margin-top: 10px;
+    
+}
+
+.fila1{
+    width: 480px;
+}
+
+.fila2{
+    padding: 15px;
+    padding-bottom: 0%;
+}
+
+.fila3{
+    text-align: center;
+    padding-top: 15px;
+    width: 486.49px;
+}
+
+.input3{
+    text-align: center;
+    
+    width: 486.49px;
+}
+
+.botones{
+    padding: 15px;
+    width: 486,49px;
+}

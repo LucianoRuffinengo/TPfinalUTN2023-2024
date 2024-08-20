@@ -1,0 +1,39 @@
+<div class="centrar">
+<div class="contenedor">
+<div *ngIf="flag1; 
+then thenBlock1
+else elseBlock1"></div>
+
+<ng-template #thenBlock1>
+    <h1>Información del usuario</h1>
+    <p class="nombreCom" id="nombreCompleto" >{{usuarioActual.nombre}} {{usuarioActual.apellido}}</p>
+    <p id="correoElectronico">{{usuarioActual.mail}}</p>
+    <div class="botones">
+    <p>
+        <button href="" routerLink="/historial" class="botonHist">Historial</button>
+    
+        <button type="button" (click)="mostrar(1)" class="botonCamb">Cambiar datos</button>
+    </p>
+    <p>
+        
+        <button type="button" (click)="mostrar(2)"class="botonBorr">Borrar Cuenta</button>
+        <button type="button" (click)="cerrarSesion()" class="botonCerr" href="" routerLink="/home">Cerrar Sesion</button>
+    </p>
+</div>
+
+</ng-template>
+
+<ng-template #elseBlock1>
+    <div *ngIf="flag2; 
+    then thenBlock2
+    else elseBlock2"></div>
+
+    <ng-template #thenBlock2> 
+        <app-modificacion (newOpcion)="mostrar($event)"></app-modificacion>
+    </ng-template>
+    <ng-template #elseBlock2>
+        <app-eliminar (newOpcion)="mostrar($event)"></app-eliminar>
+    </ng-template>
+</ng-template>
+</div>
+</div>

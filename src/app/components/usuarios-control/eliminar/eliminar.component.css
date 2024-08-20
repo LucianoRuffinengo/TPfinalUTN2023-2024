@@ -1,0 +1,35 @@
+.botonCanc{
+    margin-right: 30px;
+    background-color: #A2A2A3;
+    font-size: 1.2rem;
+    
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 3%;
+}
+
+.botonCanc:hover{
+    cursor:pointer;
+    background-color: #D33808;
+}
+
+.botonBorr{
+    background-color: #900C3F;
+    font-size: 1.2rem;
+    
+    color: #fff;
+    border-radius: 6px;
+    border: #e1e1e1 3px solid;
+    padding: 3%;
+    margin-top: 1px;
+}
+
+.botonBorr:hover{
+    cursor: pointer;
+    border-color: #000;
+}
+
+.botones{
+    padding-top: 70px;
+}

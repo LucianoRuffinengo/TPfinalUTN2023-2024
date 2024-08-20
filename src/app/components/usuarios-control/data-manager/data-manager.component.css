@@ -1,0 +1,101 @@
+
+.contenedor {
+    border: 3px solid #000;
+    border-radius: 5px;
+    padding: 2%;
+    margin-bottom: 20px;
+    background-color: #e1e1e1;
+    text-align: center;
+    width:550px; 
+    height: 400px;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+h1{
+    padding-bottom: 5%;
+}
+
+.nombreCom{
+    font-size: 1.4rem;
+}
+
+.botones{
+    margin-top: 40px;
+    padding: 0%;
+    
+}
+
+
+.botonHist{
+    margin-right: 10px;
+    background-color: #A2A2A3;
+    font-size: 1.2rem;
+    
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 3%;
+    
+}
+
+.botonHist:hover{
+    background-color: #76c879;
+    cursor: pointer;
+}
+
+.botonCamb{
+    
+    background-color: #A2A2A3;
+    font-size: 1.2rem;
+    
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 3%;
+    
+}
+
+.botonCamb:hover{
+    background-color: #3D49B6;
+    cursor: pointer;
+}
+
+.botonBorr{
+    margin-right: 10px;
+    background-color: #900C3F;
+    font-size: 1.2rem;
+    
+    color: #fff;
+    border-radius: 6px;
+    border: #e1e1e1 3px solid;
+    padding: 3%;
+    margin-top: 1px;
+    
+}
+
+.botonBorr:hover{
+    cursor: pointer;
+    border-color: #000;
+}
+
+.botonCerr{
+    margin-right: 10px;
+    background-color: #A2A2A3;
+    font-size: 1.2rem;
+    
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 3%;
+}
+
+.botonCerr:hover{
+    cursor:pointer;
+    background-color: #D33808;
+}

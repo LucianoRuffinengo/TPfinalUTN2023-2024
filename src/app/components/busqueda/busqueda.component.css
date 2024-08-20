@@ -1,0 +1,62 @@
+.contenedor {
+  margin: 0 auto;
+  width: 80%;
+  padding: 5rem;
+}
+
+h1 {
+  color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+thead th {
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  padding: 1rem;
+}
+
+tbody td {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: beige;
+}
+
+
+.libro {
+  text-decoration: none;
+  color: black;
+}
+
+.imagen {
+  width: 4rem;
+}
+
+.mensaje {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+div h1 {
+  color: black;
+}
+
+@media (max-width:900px) {
+  .contenedor {
+    width: 100%;
+  }
+}

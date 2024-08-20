@@ -1,0 +1,86 @@
+<div class="recomendations">
+    <h2>Recomendaciones del día</h2>
+    <div class="contenedor">
+        <div class="libro" *ngFor="let item of listadoLibros; let i=index">
+            <a href="" [routerLink]="['/producto',item.id]">
+                <img class="imagen-libro" [src]="item.image_url" alt="{{ item.title }}">
+            </a>
+            <div class="product">
+                <h3>{{item.title}}</h3>
+                <p>${{ listadoStock && listadoStock[i] ? listadoStock[i].precio : '' }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="contenedor-lista">
+
+    <div class="contenedor-4-elementos">
+        <h1 class="titulo-categorias">Las categorías más destacadas</h1>
+
+        <div class="contenedor-elemento">
+
+            <div class="div-imagenes">
+                <img src="../assets/images/novelas-jovenes.jpg" alt="">
+            </div>
+
+            <div class="div-leyenda">
+                <h1 class="titulo-novela">Novelas Juveniles</h1>
+                <p class="titulo">Todos los titulos de novelas para adolescentes</p>
+                <a class="boton-contenedor" [routerLink]="['/categoria/Young Adult']">
+                    <p>Ver Todo</p>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="contenedor-elemento">
+
+            <div class="div-imagenes">
+                <img src="../assets/images/novelas-romanticas.jpg" alt="">
+            </div>
+
+            <div class="div-leyenda">
+                <h1 class="titulo-novela">Novelas Romanticas</h1>
+                <p class="titulo">Encontrá todos los título de del género romántico en nuestro catálogo</p>
+                <a class="boton-contenedor" [routerLink]="['/categoria/Romance']">
+                    <p>Ver Todo</p>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="contenedor-elemento">
+
+            <div class="div-imagenes">
+                <img src="../assets/images/novelas-niños.jpg" alt="">
+            </div>
+
+            <div class="div-leyenda">
+                <h1 class="titulo-novela">Libros para Niños</h1>
+                <p class="titulo">Mirá todos los titulos que tenemos para los más pequeños</p>
+                <a class="boton-contenedor" [routerLink]="['/categoria/Childrens']">
+                    <p>Ver Todo</p>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="contenedor-elemento">
+
+            <div class="div-imagenes">
+                <img src="../assets/images/novelas-literarios.jpg" alt="">
+            </div>
+
+            <div class="div-leyenda">
+                <h1 class="titulo-novela">Libros de Literatura</h1>
+                <p class="titulo">Libros literarios historicos y recientes</p>
+                <a class="boton-contenedor" [routerLink]="['/categoria/Literature']">
+                    <p>Ver Todo</p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,288 @@
+.descripcion2 {
+    width: 20rem;
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor {
+    padding-top: 4rem;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+    display: flex;
+    gap: 5rem;
+}
+
+.contenedor-imagen{
+    width: 20rem;
+}
+
+.line{
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    border-left: .1rem solid #3f4245;
+}
+
+.descripcion {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.boton-compra {
+    display: inline-block;
+    background-color: #76c879;
+    color: #fff;
+    padding: 20px 40px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    font-size: x-large;
+}
+
+.boton-compra:hover {
+    background-color: #45a049;
+    transition: background-color 0.3s;
+}
+
+.metodos {
+    display: flex;
+    justify-content: center;
+}
+
+.metodos a {
+    margin: 1rem;
+}
+
+.producto-descripcion {
+    border-top: 0.1em solid grey;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+h4{
+    line-height: 0;
+}
+
+.sinopsis {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.boton-favoritos {
+    display: inline-block;
+    background-color: #3f4245;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    font-size: x-small;
+}
+
+.boton-favoritos:hover {
+    background-color: #538856;
+    transition: background-color 0.3s;
+}
+
+
+.boton-favoritos.clicked {
+    background-color: #538856;
+}
+
+.clicked {
+    background-color: #538856;
+}
+
+.mensaje-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: rgb(192, 192, 169);
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    animation: fadeInOut 3s ease-out;
+}
+
+.open {
+    color: #3f4245;
+    text-decoration: none;
+}
+
+.modal {
+    width: 100%;
+    position: fixed;
+    inset: 0;
+    background: #0000005d;
+    display: flex;
+    transform: translate(100%);
+}
+
+.modal:target {
+    transform: translate(0);
+}
+
+.modal__container {
+    width: 30%;
+    background-color: beige;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.modal__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__titular {
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.modal__titular i {
+    margin-right: .5rem;
+}
+
+.modal__close {
+    background-color: crimson;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.modal__mensaje {
+    width: 100%;
+    /* padding: 1.5rem; */
+    padding: 0 1rem 1rem 1rem;
+
+}
+
+.modal__mensaje h3 {
+    text-align: center;
+}
+
+.modal__mensaje p {
+    font-size: .8rem;
+}
+
+.modal__subtitulo {
+    margin-bottom: 3rem;
+}
+
+.titulo_tabla{
+    width: 100%;
+    padding-left: 1rem;
+}
+
+table{
+    width: 100%;
+    padding: 0 1rem 1rem 1rem;
+}
+
+td{
+    padding: .3rem;
+    font-size: .8rem;
+}
+
+td:first-child{
+    padding-left: 0;
+}
+td:last-child{
+    padding-right: 0;
+}
+tr th{
+    width: 50%;
+}
+
+
+
+@keyframes fadeInOut {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    10%,
+    90% {
+        opacity: 1;
+    }
+}
+
+
+
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botones a {
+    margin-bottom: 2rem;
+}
+
+@media (max-width:600px) {
+    .modal__container{
+        width: 90%;
+    }
+    .producto-descripcion{
+        width: 90%;
+    }
+}
+
+@media (max-width:850px) {
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulo-autor-precio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .producto-descripcion:nth-child(2){
+        display: flex;
+        flex-direction: column;
+    }
+}

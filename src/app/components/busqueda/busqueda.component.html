@@ -1,0 +1,36 @@
+<div *ngIf="listadoLibrosFiltrados && listadoLibrosFiltrados.length > 0; else noCoincidencias" class="contenedor">
+    <h2>ARTICULOS ENCONTRADOS</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ARTICULO</th>
+                <th>TITULO</th>
+                <th>AUTOR</th>
+                <th>PRECIO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of listadoLibrosFiltrados; let i=index">
+                <td class="libro"><a href="" [routerLink]="['/producto',item.id]">
+                        <img class="imagen" [src]="item.image_url" alt="{{ item.title }}">
+                    </a></td>
+                <td><a style="color: black;" href="" [routerLink]="['/producto',item.id]">{{item.title}}</a></td>
+                <td>{{item.authors}}</td>
+                <td>{{ stockID && stockID[i] ? stockID[i].precio : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<ng-template #noCoincidencias>
+    <div class="mensaje">
+        <div>
+            <h1>¡Oh no! ¡No hay publicaciones que coincidan con tu búsqueda!</h1>
+            <ul>
+                <li>Revisá la ortografía de la palabra.</li>
+                <li>Utilizá palabras más genéricas o menos palabras.</li>
+                <li>Prueba navegar por nuestro menú de categorías.</li>
+                <li>Vuelve a la <a href="" routerLink="home">pagina principal</a> para seguir buscando.</li>
+            </ul>
+        </div>
+    </div>
+</ng-template>

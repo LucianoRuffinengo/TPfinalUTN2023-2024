@@ -1,0 +1,52 @@
+<section>
+    <h2 class="titulo">Listado de favoritos</h2>
+    <div *ngIf="flag1; 
+then thenBlock1 
+else elseBlock1"></div>
+
+    <ng-template #thenBlock1>
+        <div *ngIf="flag2; 
+    then thenBlock2 
+    else elseBlock2"></div>
+
+        <ng-template #thenBlock2>
+            <a class="contenedor-lista-fav">
+                <table class="">
+                    <thead></thead>
+                    <tbody class="listaFav">
+                        <tr *ngFor="let item of listaLibros">
+                            <div class="fila">
+                                <td href="" [routerLink]="['/producto',item.id]">
+                                    <img class="imagen-libro" [src]="item.image_url" alt="{{item.title}}">
+                                </td>
+                                <td class="informacion">
+
+                                    <p class="titulo">{{item.title}}</p>
+                                    <p class="autor">{{item.authors}}</p>
+
+                                </td>
+                                <td class="eliminar">
+                                    <button class="botonElim" (click)="eliminarFav(item.id)">X</button>
+                                </td>
+                            </div>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+        </ng-template>
+
+        <ng-template #elseBlock2>
+
+            <h3>¡Aun no se han agregado ningún libro a la lista de favoritos!</h3>
+            <h4>¿Por que no revisa nuestro catalogo? Tal vez algo le interese c;</h4>
+
+        </ng-template>
+    </ng-template>
+
+    <ng-template #elseBlock1>
+
+        <h3>Inicie sesión para poder tener su propia lista con sus libros favoritos</h3>
+
+    </ng-template>
+
+</section>

@@ -1,0 +1,34 @@
+{
+  "admin": [
+    {
+      "id": 1,
+      "usuario": "mgallardo",
+      "contraseña": "91218",
+      "categoria": "empleado"
+    },
+    {
+      "id": 2,
+      "usuario": "messi",
+      "contraseña": "181222",
+      "categoria": "administrador"
+    },
+    {
+      "id": 3,
+      "usuario": "gchaldu",
+      "contraseña": "201123",
+      "categoria": "administrador"
+    },
+    {
+      "id": 4,
+      "usuario": "lenovo",
+      "contraseña": "verano",
+      "categoria": "empleado"
+    },
+    {
+      "id": 5,
+      "usuario": "pochita",
+      "contraseña": "denjikun",
+      "categoria": "administrador"
+    }
+  ]
+}

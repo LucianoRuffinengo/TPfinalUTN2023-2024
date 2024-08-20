@@ -1,0 +1,45 @@
+<section>
+
+    <header class="navegacion">
+        <div class="imagen">
+            <a href="" routerLink="home">
+                <img class="logo" src="../assets/images/fondo.png" alt="">
+            </a>
+            <nav class="links">
+                <div class="opciones">
+                    <div class="admin-links">
+                        <a style="cursor: pointer;" [routerLink]="['/nuevo-admin']">Crear Administrador</a>
+                        <a style="cursor: pointer;" [routerLink]="['/admin']">Listado General</a>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <div class="contenedor-ppal">
+        <div class="contenedor">
+            <h1>Listado de Empleados</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Usuario</th>
+                        <th>Contraseña</th>
+                        <th>Categoria</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of listadoAdmins">
+                        <td>{{item.id}}</td>
+                        <td>{{item.usuario}}</td>
+                        <td>**********</td>
+                        <td>{{item.categoria}}</td>
+                        <td><a style="cursor: pointer;" (click)="eliminarAdminHttp(item.id)">Eliminar</a></td>
+                        <td><a [routerLink]="['/admin', item.id]">Editar</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

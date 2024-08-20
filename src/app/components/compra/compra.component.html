@@ -1,0 +1,34 @@
+<section class="contenedor">
+    <h1>Carrito</h1>
+    <table class="tablaCarr">
+        <thead>
+            <tr>
+                <th>Titulo</th>
+                <th>Edicion</th>
+                <th>Cantidad</th>
+                <th>SubTotal</th>
+            </tr>
+        </thead>
+        <tbody id="libros">
+            <tr *ngFor="let item of listaItemsCarrito">
+                <td>{{item.titulo}}</td>
+                <td>{{item.edicion}}</td>
+                <td>{{item.cantidad}}</td>
+                <td>{{item.subtotal | number: '.2'}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Total: ${{calcularTotalAPagar()|number:'.2'}}</h2>
+    <div class="sel-tarjeta">
+        <label class="label" for="tarjeta">Tarjeta:</label>
+        <select required [(ngModel)]="selectedOption" #option="ngModel" name="option" (change)="onChangeSelect()">
+            <option value="" disabled selected>-- Numero tarjeta --</option>
+            <option value="num">{{user?.tarjetaCredito?.numeroTarjeta}}</option>
+        </select>
+        <a (click)="viajarATarjeta()" class="btnMetodo">Cambiar</a>
+    </div>
+    <div class="cont-btn">
+        <a class="btnCompra" (click)="verificarTarjeta()">COMPRAR</a>
+        <a class="btnRechazar" (click)="volverACarrito()">RECHAZAR COMPRA</a>
+    </div>
+</section>

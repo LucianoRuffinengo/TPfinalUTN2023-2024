@@ -1,0 +1,40 @@
+<div *ngIf="listaItemsCarrito && listaItemsCarrito.length>0; else noCoincidencias" class="contenedor">
+    <h1>Carrito</h1>
+    <table class="tablaCarr">
+        <thead>
+            <tr>
+                <th class="td"></th>
+                <th>Titulo</th>
+                <th class="td">Edicion</th>
+                <th>Cantidad</th>
+                <th class="td">Precio</th>
+                <th>SubTotal</th>
+            </tr>
+        </thead>
+        <tbody id="libros">
+            <tr *ngFor="let item of listaItemsCarrito">
+                <td class="td"><img class="imagen" [src]="item.image_url"></td>
+                <td>{{item.titulo}}</td>
+                <td class="td">{{item.edicion}}</td>
+                <td>{{item.cantidad}}</td>
+                <td class="td">{{item.precio | number: '.2'}}</td>
+                <td>{{item.subtotal | number: '.2'}}</td>
+                <td><a class="btnEliminar" (click)="eliminarUnElemento(item.id)"></a></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="cont-btn">
+        <a class="btnVaciar" (click)="vaciarCarrito()">Vaciar carrito</a>
+        <a class="btnCompra" (click)="verificarLogin()">Comprar producto</a>
+    </div>
+
+</div>
+
+<ng-template #noCoincidencias>
+    <div class="mensaje">
+        <div>
+            <h1>Parece que no hay productos en el carrito</h1>
+            <span>Vuelva a la <a href="" routerLink="home">pagina principal</a> para seguir buscando entre nuestro catalogo de productos</span>
+        </div>
+    </div>
+</ng-template>

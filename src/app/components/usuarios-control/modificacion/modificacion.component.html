@@ -1,0 +1,40 @@
+
+<form action="" id="modif">
+  <table class="contenedor-modif">
+    <tbody>
+    <tr>
+      <td>Ingrese su nuevo nombre </td>
+      <td>Ingrese su nuevo apellido</td>
+    </tr>
+        
+    <tr>
+      <td> <input type="text" id="nombre" value="" (input)="soloLetras($event)"></td>
+      <td><input type="text" id="apellido" value="" (input)="soloLetras($event)"></td>
+    </tr>
+
+    <tr >
+      <td class="fila2">Ingrese su nuevo correo electrónico</td>
+      <td class="fila2">Ingrese su nueva contraseña</td>
+    </tr>
+
+    <tr>
+      <td><input type="text" id="mail" value="" ></td>
+      <td><input type="text" id="contra" value=""></td>
+    </tr>
+  </tbody>
+</table>
+    
+    <p class="fila3">
+      Ingrese su DNI
+    </p>
+
+    <p class="input3">
+       <input type="text" id="dni" value="" (input)="soloNumeros($event)">
+    </p>
+      
+      
+    <p class="botones">
+      <button type="submit" (click)="modificar($event)" class="botonGuar">Guardar cambios</button>
+      <button type="button" (click)="opcion(0)" class="botonVolv">Volver</button>
+    </p>   
+      

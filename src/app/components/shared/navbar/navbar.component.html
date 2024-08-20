@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<main>
+    <header>
+        <nav class="navegacion">
+            <div class="imagen">
+                <a href="" routerLink="home">
+                    <img class="logo" src="../assets/images/fondo.png" alt="">
+                </a>
+            </div>
+            <div class="search-container">
+                <div class="search-container">
+                    <form class="form-input" (ngSubmit)="buscarLibros()">
+                        <input type="text" class="search-input" [(ngModel)]="tituloLibro" name="tituloLibro"
+                            placeholder="Ingrese un libro a buscar">
+                        <button type="submit" class="search-icon"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="search-container2">
+                <a class="usuario-menu" href="#" routerLink="/usuario-menu">
+                    <div *ngIf="flag; 
+                    then thenBlock 
+                    else elseBlock"></div>
+
+                    <ng-template #thenBlock> Mi cuenta</ng-template>
+                    <ng-template #elseBlock> Iniciar sesion/Registrarse</ng-template>
+                </a>
+                <a class="lista-menu" href="#" routerLink="/lista-favoritos">Lista de deseados</a>
+                <a class="carrito-menu" href="#" routerLink="/carrito">Carrito</a>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="links">
+        <div>
+            <a href="#" routerLink="/libros">Libros</a>
+            <a href="/en-construccion">Catalogo</a>
+            <a href="/en-construccion">Musica</a>
+            <a href="/contacto">Contacto</a>
+
+        </div>
+
+    </nav>
+</main>
